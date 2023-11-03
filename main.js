@@ -69,7 +69,7 @@ formulario.addEventListener('submit', e => {
 // Eliminar tarea
 listaUl.addEventListener('click', e => {
   if (e.target.classList.contains('btn-delete')) {
-    const indice = e.target.parentElement.rowIndex - 1;
+    const indice = tareas.indexOf(e.target.parentElement.firstElementChild.textContent);
     tareas.splice(indice, 1);
     guardarTareas();
     renderizarTareas();
