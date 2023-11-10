@@ -1,4 +1,4 @@
-// Seleccionar elementos
+// Seleccionar los elementos
 const formulario = document.querySelector('form');
 const entrada = document.querySelector('input');
 const listaUl = document.querySelector('ul');
